@@ -6,6 +6,8 @@ metadata:
 spec:
   install:
     crds: CreateReplace
+  upgrade:
+    crds: CreateReplace
   chart:
     spec:
       chart: cert-manager
