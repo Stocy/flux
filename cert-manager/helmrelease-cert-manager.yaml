@@ -5,13 +5,14 @@ metadata:
   namespace: cert-manager
 spec:
   install:
+    remediation:
+      retries: 3
     crds: CreateReplace
   upgrade:
     crds: CreateReplace
   chart:
     spec:
       chart: cert-manager
-#      version: v1.15.4
       version: v1.16.2
       sourceRef:
         kind: HelmRepository
