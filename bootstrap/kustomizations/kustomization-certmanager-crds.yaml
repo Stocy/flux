@@ -5,13 +5,8 @@ metadata:
   namespace: flux-system
 spec:
   interval: 15m
-  path: ./cert-manager/crds
+  path: ./releases/download/v1.16.2/cert-manager.crds.yaml
   prune: true # remove any elements later removed from the above path
   sourceRef:
     kind: GitRepository
-    name: flux-system
-  healthChecks:
-    - apiVersion: apps/v1
-      kind: Deployment
-      name: cert-manager
-      namespace: cert-manager
+    name: cert-manager-crds
