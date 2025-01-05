@@ -1,8 +1,10 @@
 apiVersion: source.toolkit.fluxcd.io/v1beta1
-kind: HelmRepository
+kind: GitRepository
 metadata:
   name: cert-manager-git
   namespace: cert-manager
 spec:
-  interval: 15m
+  interval: 1m0s
   url: https://github.com/cert-manager/cert-manager
+  ref:
+    branch: main
