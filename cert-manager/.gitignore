@@ -1,2 +1,3 @@
 secret-cert-manager-helm-chart-value-overrides.yaml
 le-cluster-issuer.yaml
+helmrelease-cert-manager.yaml
