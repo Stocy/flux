@@ -6,6 +6,7 @@ metadata:
 spec:
   dependsOn:
     - name: cert-manager
+  wait: true
   interval: 15m
   path: ./cert-manager/resources
   prune: true # remove any elements later removed from the above path
