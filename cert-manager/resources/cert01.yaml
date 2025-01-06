@@ -2,7 +2,7 @@ apiVersion: cert-manager.io/v1
 kind: Certificate
 metadata:
     name: ENC[AES256_GCM,data:mJDUgDKQ1d+y2PBb4U/8jEo=,iv:PVO+jd6XxmKJZFtLyRjyQzOdkt6V3aXiiQe0zybjn5s=,tag:38T1QlYGJClvk1Kz26rbYA==,type:str]
-    # namespace: cert-manager
+    namespace: cert-manager
 spec:
     # Secret names are always required.
     secretName: ENC[AES256_GCM,data:bVFdSZ8z23ycz6ELFXptE+2yBUoZ,iv:/iUwXS3lu8WCLkZ8UexMHlZtBUaQq6+PZgpBEqlJzVs=,tag:X24PIW/dM9MKJfECJ9X2HQ==,type:str]
