@@ -8,7 +8,7 @@ spec:
   - whoami.local
   parentRefs:
   - name: http-gateway
-    namespace: cilium
+    namespace: kube-system
   rules:
     - backendRefs:
       - name: podinfo
