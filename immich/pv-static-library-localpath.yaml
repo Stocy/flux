@@ -1,0 +1,54 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+    name: immich-static-library-pv
+spec:
+    capacity:
+        storage: ENC[AES256_GCM,data:3MibNAo=,iv:fGLNHMm7gekDXA8gryMAATFzAqjK5AUI4dO8tVFdYnM=,tag:iq7Qu0Gk1pT0k1x2GVn+KA==,type:str]
+    volumeMode: Filesystem
+    accessModes:
+        - ReadWriteMany
+    persistentVolumeReclaimPolicy: Retain
+    storageClassName: local-path
+    local:
+        path: ENC[AES256_GCM,data:WO/CSKPYqS3vZm9xy8wHAH5HreSTcV3Zkfo=,iv:t0WieveN3qA/6/HRhlSH8e5V0DAfvGX8grAD0mkWWfI=,tag:ZvJkgKXlcPquuDjd7c9i+Q==,type:str]
+    nodeAffinity:
+        required:
+            nodeSelectorTerms:
+                - matchExpressions:
+                    - key: ENC[AES256_GCM,data:v0JTlrf0EBPKCPHSP7krFrBksQ0BCw==,iv:m4vzuF6ncgOY3XmlQGgRi3H3kATw+yU4MXGVU38GtZY=,tag:i5rImgXtOuAc4yYqjtM05A==,type:str]
+                      operator: ENC[AES256_GCM,data:Hkc=,iv:rmjnDEUSdFU583bBnMa2zwm1W14E+iByBlTKV6CMqaM=,tag:28ClS65TE/u9DlshXrZfWw==,type:str]
+                      values:
+                        - ENC[AES256_GCM,data:2i1ghTDr3F/A8w==,iv:/D0hZ5X+WBMtrrcx89Wbwpp+Y2pLbB66epLYCz4F4Bk=,tag:nFg7ihTJ4VRciV/gZqdHTg==,type:str]
+sops:
+    kms: []
+    gcp_kms: []
+    azure_kv: []
+    hc_vault: []
+    age: []
+    lastmodified: "2025-02-06T22:36:18Z"
+    mac: ENC[AES256_GCM,data:H4BrWvYWyEoAPwiDnLcoRSAVnyTIS/mO7ZLHG6Pv7KPvJFQq0ME0CfCsY9KohLbL7OlFaEI5oPemM569BKV3My1nxkhChybD+j/s146aRpolIZYu/h6qlNXsJTdUWpxalCNhMM1obKXck7QBrdUHezhehLTgOV/Da+MYmBz8OZw=,iv:sbnqW2XGQpB/+gGPNaIJI7IbYt4DCmFHjPaOWa0xH4I=,tag:Ck6vkng1C80FreIm/UnB9w==,type:str]
+    pgp:
+        - created_at: "2025-02-06T22:36:18Z"
+          enc: |-
+            -----BEGIN PGP MESSAGE-----
+
+            hQIMA262vqLG74HEAQ//fg/uZEt+ltJLxJJkAjRZBjrJefWdpCOuqPCt9Uy0Og9E
+            2gSa/OKYSmjxAWybGUeIs30acqbXcMFphVJ8dzpgDNk/G3f6Vumh4VaKMsdshB+9
+            LhcbNAHEtqmnnVccev5Xll5vL2m34eg1o0e8ailcoOSzWMK2oNV84zweY5HaqbGK
+            ENfFX3WL8ETIoEzX/qxjXheqeTmXb42uRKC0FUE2zghpwt6W1Lvu8eSwrYH0TVfn
+            XPveVzOkOe6567R2YHzy01523ZVONxFlHFdq7iGtXQ/DhTRQ/zpFf3HCChKsy3ix
+            Lcu+hKGDE1nqZG7aBwEE7eqqGLP/A7kq1Lgu6vLRd/sSkbTgOoOnF4LQcFWBXfcv
+            C4C44wwt76WEb0JBlbYcE7DsMPZV9+QJqPoSwuLN4kP5J6y1wD2XyAKh5qQyjZOQ
+            s45lTsFN/DISElEvDT+25vIOr/NfBvYiKyhC9UiuNQEDVvZ06I0WeBgAByyWAViF
+            i2qD2mt8/fwUv3LMlatJbxDJuTWdPSAk1Xw3k0zqAAYO+fSuAssgjHj2vZ6UDMrf
+            CdW93sdxglWRBHTku3sLX/oPOep8hxVCwsUqKdgsrMNR7q3e7yGvbm9y2EF47BUp
+            z1NZ7zYeg4uSKU+HU6axsIjFNiNp8H63InsA4qZP3cV0/gmZhl61KMAqlfqQv2/U
+            aAEJAhA6MzeKtUYZCV3reH0Op/IAG/z/q6qNB+ZvPg7/a1m4qE4OYD8n3hpgh/19
+            hXfKfXuU6tY9b8JezIxPp/nkgY+7uhwD7/z3NE93EUOJjNquNXEhYcf66Ci84xj4
+            HgnQIGLJUONS
+            =MEeY
+            -----END PGP MESSAGE-----
+          fp: 75305C71C2CBD1BB31E45BC9EB711729A929833C
+    encrypted_regex: ^(path|matchExpressions|capacity)$
+    version: 3.9.1
