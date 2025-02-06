@@ -23,3 +23,6 @@ creation_rules:
  - path_regex: immich/pvc-.*.yaml
    encrypted_regex: ^(requests)$
    pgp: 75305C71C2CBD1BB31E45BC9EB711729A929833C
+ - path_regex: immich/helmrelease.yaml 
+   encrypted_regex: ^(values)$
+   pgp: 75305C71C2CBD1BB31E45BC9EB711729A929833C
