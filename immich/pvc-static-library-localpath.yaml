@@ -1,0 +1,45 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+    name: immich-static-library-pvc
+    namespace: immich
+spec:
+    volumeName: immich-static-library-pv
+    storageClassName: local-storage
+    accessModes:
+        - ReadWriteMany
+    resources:
+        requests:
+            storage: ENC[AES256_GCM,data:4D807Ps=,iv:sEBMHBbYa1QXfcC9x2NVVWzipIR3NLD3QcRLJX8oYOY=,tag:N2RtCsoKEdsPgj5553MnzQ==,type:str]
+sops:
+    kms: []
+    gcp_kms: []
+    azure_kv: []
+    hc_vault: []
+    age: []
+    lastmodified: "2025-02-06T22:53:29Z"
+    mac: ENC[AES256_GCM,data:FNo8C6zotv660i2KaSexChOHNJhSyv3zaCRo6xX7lNxZSDY/p0mStdOfMHPmGcHwFKhQY7pIAW3rMcsAAk3YiLdVBtZlruw29k7oa7bCJTcngBnYlSlTQDOMXfuU7xI4xosoLvjXr8l7ZoHrvoG60FhhHMijJP35aCnr1f2vkvk=,iv:x5C0gjLg4dUodn5ZU5XZzCvAQef8+pbeuPFKGsCoscU=,tag:A6tnoJIo0LrUQ0ZF5oBN7g==,type:str]
+    pgp:
+        - created_at: "2025-02-06T22:53:29Z"
+          enc: |-
+            -----BEGIN PGP MESSAGE-----
+
+            hQIMA262vqLG74HEAQ//f32/tW0cM4u6n34MiXQw8gUvIW1H29V9moT9BjXl1lkh
+            muBnlxw3pXPZVrsIbcDb6bOuWMczXs+1C5PoMTIEHHP/HZlk0SnCS2PcbcBvYehW
+            XllU9yXb4HiwS+sTLJeb0He5AxvO0c+dV45R5MSa6uClCTb9Pua/P0jWKHSpjG0E
+            yQb78z1K/tt1AfUK0FdLRBUCt/gvc20eIC/KEgpygCSsKvIOadGqkkrTGvpL2dSj
+            qOdfcyj5m+gBguj4pWGSO58EzScixGNpOyodgf2R1qY1dpbWRi+vs2RPMtr937zh
+            t+NKHQJ/TXg7w6IsKkvN/s6fElBwqpfLBwxQ902zNZ/+7zXkmOGEmQL6yPkxYBZ2
+            ilszVl+T0H+OsWMGKCs/g5gMoSfoaHa2lVlgu6IffL53H8XRhN432awamWkOimY/
+            A8pHaFVPyILU5vbj1fIY32ajj9bF0OT6yWfUj75lb2z7bqMSJE8Mpn6J7w54QGl2
+            Ow9FL/3kjptPyaI9eRnXMlnGrnJ7+7uDT3IePmDVRT/xTtfJb0Ed2o1Q0It5u+eb
+            lVUfO5BbiNhtW4mVEYqaRLvT7dyWFBnZbQtxaytu0flmf2Bh1xY5jWSXBzb4Sxvi
+            E3RIOAjGF0/KL9bTB8qr0Ghvr1IY21Y4+KryUz4micEvkQtKyOnwxi00AdP0EvfU
+            ZgEJAhC+0qGtFcO7jwDJGPcXRrC14O2uh4Ry+3kkjTSDqh8S1MQtCZVVeSBupwBz
+            EoQBVi8Tbc3vdec87BY0UWwIGBNO23neeR2rpTfMHqSCMb+PPuF86eGYVgcw20Rg
+            Es9+p8MzNQ==
+            =E1+C
+            -----END PGP MESSAGE-----
+          fp: 75305C71C2CBD1BB31E45BC9EB711729A929833C
+    encrypted_regex: ^(requests)$
+    version: 3.9.1
