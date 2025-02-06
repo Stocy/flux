@@ -9,8 +9,8 @@ spec:
     #    - type: IPAddress
     #      value: 1.2.3.4 #example
     addresses:
-        - type: ENC[AES256_GCM,data:Rp7o9DtSge4Z,iv:F+RPbCGjY8CyOfeMaK4k1cSdxbOfP3kvTGHmi3Qc65U=,tag:ihvg3UHGsyyYnUFvOj4GYg==,type:str]
-          value: ENC[AES256_GCM,data:ys1dWM4CHmsYJTy0QNQ=,iv:VFk2Y1Eha0R87jjLvAUJ5WswXLuu4+6c5oz0NDysxZQ=,tag:Q3+724e4t3j37/8AJ/Kklg==,type:str]
+        - type: ENC[AES256_GCM,data:u56eCjevlFoa,iv:uY4ZywpBQcBuxYxFbvyNVRFzACeVrwZPesmSd8ssMds=,tag:9ekfYNpDNB+tj/dD1VCp1w==,type:str]
+          value: ENC[AES256_GCM,data:/7wRoawlH76CFhcnYjg=,iv:B1ZUN1UV9iKbVxg1ye04aHbTWSDdcBShTcwLSgpDAJ4=,tag:frDN47rfw2WgOsOICsV/EA==,type:str]
     listeners:
         - allowedRoutes:
             namespaces:
@@ -30,35 +30,42 @@ spec:
           name: https
           port: 443
           protocol: HTTPS
+          tls:
+            mode: Terminate
+            certificateRefs:
+                - kind: ENC[AES256_GCM,data:2f13joOQ,iv:z030JYm1mPd6m1Db+sl1BVTvbvwCAF9LBu8Xvja2LLs=,tag:XSOFyDj4Y/R8fOD3hFyiRw==,type:str]
+                  group: ""
+                  name: ENC[AES256_GCM,data:3ftXxuuD2aEj4VA14VVdZWe8dE27,iv:wfwIBBtnHSvd2F9GpuydNyb0N/GPCiW2e3b0VM3was4=,tag:OaXfU60Urqe/efp2mEvxIQ==,type:str]
+                  namespace: ENC[AES256_GCM,data:GmzG15kgLGgEk+Q=,iv:eD/5JalQxzFMt8zgCg2MAFl9NlRzeWiYwpaS4CUZfOE=,tag:xFRdrZ5ax01QF6VeGKGGSw==,type:str]
 sops:
     kms: []
     gcp_kms: []
     azure_kv: []
     hc_vault: []
     age: []
-    lastmodified: "2025-01-31T00:15:00Z"
-    mac: ENC[AES256_GCM,data:+XDYy8hdE1e2SHtBJqf/EqMINlkH2MsEf+YAMWUyne6QfYDXLxY6O3D9lXDnu6hfMKuAioCKznsb2nBkyhpXyKfI0xzHm263sePfmiDW54S8aY7ZegKpB15QbqVvHNcLE3uqauArfUHQvss64aQBq36dP8IUNYWKD2O7V5xLD3c=,iv:c93/yepAJRE09XQxWyTyEXpk1WKqZtvqWNT76mlov+A=,tag:9vtCyaitr8LjD357LvGH1Q==,type:str]
+    lastmodified: "2025-02-01T22:13:35Z"
+    mac: ENC[AES256_GCM,data:NyZnJcD2HZKCokhErpf0NFx4A4TpzUx5OkFjxC1+FY4YpgumbaMvmpAgoV/aXu/s2dHMR44t2UUfitFhY29LJbm/FmTXvFrqYWgd+9Pj0whgpIG+Rh59+TKf3kKpUrqvNdQeSGRaT8a9Edky8NI6baEU4G/k6Rv4HlmWgeEnQaY=,iv:0cDNuvXdV8C6hYog2zG6/CyGzzMe3rU37Of0BsmiJRY=,tag:VYTd4hXpclEW+r5XjoeGsw==,type:str]
     pgp:
-        - created_at: "2025-01-31T00:15:00Z"
+        - created_at: "2025-02-01T22:13:35Z"
           enc: |-
             -----BEGIN PGP MESSAGE-----
 
-            hQIMA262vqLG74HEAQ/9EBYPSUg8N6jAlQPPgfLs0ri+XJZpGlSdzsjsTSUaG2Ji
-            nlvfzlz9KbrqTFvi1mOnP9QeGRJCXxsOXBXn9adhZlGCVX4uOnnzEzf3okf2a/sS
-            3Pg3OcvwDS+ADBtX9lQD9olx5dObAnP0nqd+cNaGOLtdXKWN6xoIre3eR01JK/Gx
-            Qcknxmt4SDQZAiFjLVz2E/LSgJ077BMjA8V5LiMhUyYR9KJEvN/nsS4yDjiK21Qt
-            3ATLtA60Ae3C3YVB0MCnZKwhKA2xL8JbT0AxV3YHTb7pr4WRVXldm6v3R4NsEtxh
-            Kr3pCFSAf/mO6EYURDCgPc4sYyCaVG5YTPiAs7US6X6k9aYHoYJKT6ZWLMjOEMU/
-            Uv9skvSPOmP1spDpi4xoG5Narg3+qdMIneZAtDIySdlO2XKEyDdAB4CZ/8zw+f5U
-            lembN3KEupOEzt0UV1zsIYhq11aGB6N2q4WFOxT2kamajvRseogm7ym002EBHHDk
-            bdA5Uj8jM7uSz8oUqHNqU76sZ6E/OvQWdlb/spIn73yz7jt5qXGqS7dtm7h9JDUR
-            nqF8XbGrv285a7BwK8SZZIrA98wwVAPXa+hsgSMWbioEILCcAHVuF+26M2x8NbXc
-            6fXlWUPhZgiXCVecdC/kDY9bweMjT07d1sA2mI6UqpsOd73AzDh9kHLbmHvkeozU
-            aAEJAhBrw9iaeZ6PewdadhyA4TMQlfEpPeCxTRfRSH8dONuqU+BRLwQpJiVY94lf
-            I45wsmfA7QrVkWYNgGFIMTdYkAXdx1+vsZYkE2n2GXxd7Dj+6IzGvp1mZaZxwWwz
-            TqE+e2i7BeW5
-            =+Hw2
+            hQIMA262vqLG74HEAQ//adcPkBvrPhYJD2F94z42JNNlPRArl8DDRoToX/dnaN1h
+            GPx5y90WSxVyuxNuDDLBulUQ+m2y4gibUx/X+9QmBxjsDlrtLVcgMlRQiZzjREea
+            2B0V5TGhwjoRMv54woXDIWOftl5ABrEMxrHuxel1433E5YazXu2SVjWJeQsbwcXX
+            H2mB+zaVYr0+qaOjHRf+HWxLldxOPbYwrS7CSNe9q4hGMslWlxE/lyqtyTIXqAeL
+            JYYSfW7yjCwW5Qb1fgGY0if4XJhsUCE7DIye0UAuHdTvohtvEdQEnuustnIopDxZ
+            YuUZFNqXWtMvLxkA8LMyBAdBJXzi6aywyBDeAQEw9LnLOUxVxc+GbP4P/ruciFaA
+            yVESAgRZ5wh5d2BLsBCcnHKIcDFRCxiUV+zoJenmORCwZyiB3TTRKR6fuSZBW5NI
+            XOijsKvJIIZ2rEFImg3cBhEXv6dmX4femiZuUvRZqt4ssZBV/FldLgnA10UvCwu5
+            SY3f3+xWmBJc7IxxWxYCS9YH/oqw6+qD3IycwhkPD5ay4AtHD55mSwDoC/ydem1F
+            ENIhRfWEI9OXABgZunOsGnp6IeiGpjyIkY73jmJYFQqBRw4h4zWsaV/AsIojKJNg
+            nWKertonS6hDMDYGnsH+ya/5iSYB5qBaociIaiyVxWfH9YgtNgRpwd7rNa7Y7LHU
+            aAEJAhBsC+rliUt4RqKZfLD9ReeMGTjuQdB5y/cRdHO6zq068IHKsjK03PIsy2yF
+            sclBMySSMQ5XVaL3o55W4LT/XuGQe1Je6ZZ+pgBqdhVFDYD4SuyeQjBXsW7RYE+x
+            K4CQFatdcbGe
+            =OC62
             -----END PGP MESSAGE-----
           fp: 75305C71C2CBD1BB31E45BC9EB711729A929833C
-    encrypted_regex: ^(addresses)$
+    encrypted_regex: ^(certificateRefs|addresses)$
     version: 3.9.1
