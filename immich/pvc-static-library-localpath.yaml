@@ -5,7 +5,7 @@ metadata:
     namespace: immich
 spec:
     volumeName: immich-static-library-pv
-    storageClassName: local-storage
+    storageClassName: local-path
     accessModes:
         - ReadWriteMany
     resources:
@@ -17,8 +17,8 @@ sops:
     azure_kv: []
     hc_vault: []
     age: []
-    lastmodified: "2025-02-06T22:53:29Z"
-    mac: ENC[AES256_GCM,data:FNo8C6zotv660i2KaSexChOHNJhSyv3zaCRo6xX7lNxZSDY/p0mStdOfMHPmGcHwFKhQY7pIAW3rMcsAAk3YiLdVBtZlruw29k7oa7bCJTcngBnYlSlTQDOMXfuU7xI4xosoLvjXr8l7ZoHrvoG60FhhHMijJP35aCnr1f2vkvk=,iv:x5C0gjLg4dUodn5ZU5XZzCvAQef8+pbeuPFKGsCoscU=,tag:A6tnoJIo0LrUQ0ZF5oBN7g==,type:str]
+    lastmodified: "2025-02-06T23:11:54Z"
+    mac: ENC[AES256_GCM,data:Tm6P2am4RgZ+K879A727IeYKWdFosU1r//xs5k28VUMcZMPSvr9czol6MX6t8Ismu6ujcngcMk4Y4eRSS5YEnM8XeD2Wb/7n92oQp1HZc4BqG2R9FmEUc6lG1l0p2rJpw+YwxG9PKCaGscBnsACS8vRYqFPIY4SQoh8fCg3RVAg=,iv:cvv3yrQHETzo16cl6qyIiHqLJnadUzI0s294O88gysA=,tag:h24sPq8dKDF57AqCra8qMg==,type:str]
     pgp:
         - created_at: "2025-02-06T22:53:29Z"
           enc: |-
