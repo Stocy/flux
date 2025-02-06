@@ -15,9 +15,3 @@ spec:
     provider: sops
     secretRef:
       name: sops-gpg
-  validation: server
-#  healthChecks:
-#    - apiVersion: apps/v1
-#      kind: Deployment
-#      name: podinfo
-#      namespace: podinfo
