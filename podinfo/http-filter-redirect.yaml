@@ -1,0 +1,51 @@
+apiVersion: gateway.networking.k8s.io/v1
+kind: HTTPRoute
+metadata:
+    name: http-filter-redirect
+    namespace: podinfo
+spec:
+    hostnames:
+        - ENC[AES256_GCM,data:imbLXdjdx2nr3ZxwFfjGQy4a/L0=,iv:aJSOYQiqLW8TJM0F8g4G0flRqdExbsBJciSLNZgD0+A=,tag:p6wMkeMcs7onxgoK6Ua3CA==,type:str]
+        - ENC[AES256_GCM,data:1H2pslUTafARRVr4,iv:vCalAbPhNYG7Y5C6D+1shaKw1KlZCsId/OmuuEPmBEM=,tag:yFWIbPhZeJMUpXhK6eUpXg==,type:str]
+    parentRefs:
+        - name: http-gateway
+          sectionName: http
+          namespace: kube-system
+    rules:
+        - filters:
+            - type: RequestRedirect
+              requestRedirect:
+                scheme: https
+                statusCode: 301
+sops:
+    kms: []
+    gcp_kms: []
+    azure_kv: []
+    hc_vault: []
+    age: []
+    lastmodified: "2025-02-06T20:27:38Z"
+    mac: ENC[AES256_GCM,data:qsRDPGWlSZkQbd3ZwfV+2Q1Q8jk9h4aPZNy3xGio1cRDYxQRZFGY/skF/4U+o5NtQWaKCpXUZGuPL2+bjuPwhPztId0tIAY/YT2hHNcS1qk4tUVFEZk2iolpsN6ey76kEbc76W0lR/Cj4GqpiapPXNeyR7we67ZvYOjHAHMGOnY=,iv:BC/SHeONLQRfEF09aZJQor9nQa8Ba15eRhfKB+zrq4U=,tag:mJpmRqwWMKhqvzulq9YWaw==,type:str]
+    pgp:
+        - created_at: "2025-02-06T20:27:38Z"
+          enc: |-
+            -----BEGIN PGP MESSAGE-----
+
+            hQIMA262vqLG74HEAQ/9E+DyMJOxqDBp1YcjLa1s2NFW+kHE1jbPvNnCyaXCud1S
+            UIhiwKc5pH4+d7UMmySOZloI+SxilenYEFd3rBbbtLAAJtrk6sPBExedynk4xsU5
+            E66zTVm4B3CBRpq1mUUFAv/Pg7NCtdObshhys3rAp6v4jEvUVI5T0VWjdTdNdVmi
+            pwvshXyN0MMOKJzkojmWi/sf8QmL1Obz/nrNKlejEkzI882puhmIyHObSVN/Z9MA
+            +xK0adE/rS/M9isz2I1QSZKPlVZ3BwnBFjQ5zjnBrjUyejSjT4fo22rJLJezYJx2
+            fiVrsjjC66Q856ReIkCpzo9VzRaB+FiiMWGd/CzsRq2eX8RbaTpDk58llt0dHTm3
+            JfgpTg3FpLnA6Sr1YUD4anTSDCU48dKOuz54rXVClVTDa1N+rGrErhcL/mA3c07K
+            1PMITL3gYNJCX9UYfFZcAS3f79IrnmbBnFso6H/mog4QxfJJ8L1Rmo9ps7b1vGgs
+            +Q+BQo1NjXwaV90ukByfUwsAdK/fyzQZl0GG0voiXbT5vl6RostpxGpcWop6sxXY
+            W3X7lPduOKrFOc5A4Fx9C9hSd5vjLQNSCb9JKmwMjMyypxVnUyV7DJELB7bLqmVT
+            uJ/QmtRBFiwZ8ro/SVW1x8bM0Q4e9xxcHfMOmbI5+0m7VR1l6lZ6pZWUDjLLBELU
+            aAEJAhAem0cZVsSZLMHLCQ023qOGKP173gmLypMrkSmBvY26f5C8GW8C9957pD8o
+            itG2Fcgris0GZ5OKxh8SBmsqe/mrI9UsSNGaZwPyP+R7QxP/xqZZXvdtOj0GB0vE
+            ccRRSO3LXwRX
+            =tGQ1
+            -----END PGP MESSAGE-----
+          fp: 75305C71C2CBD1BB31E45BC9EB711729A929833C
+    encrypted_regex: hostnames
+    version: 3.9.1

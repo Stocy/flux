@@ -1,7 +1,7 @@
 apiVersion: gateway.networking.k8s.io/v1
 kind: HTTPRoute
 metadata:
-    name: http-app-1
+    name: https-route
     namespace: podinfo
 spec:
     #  hostnames:
@@ -11,24 +11,20 @@ spec:
         - ENC[AES256_GCM,data:+bC0iDSc2oAG3F0AKeE6sPK62NM=,iv:4SjDZEzwY+1+L7fuZeXzLP9m/IsLjEu2n2esXo6HqW8=,tag:xSRwcqn+8Dfx1++B7XaF7g==,type:str]
     parentRefs:
         - name: http-gateway
+          sectionName: https
           namespace: kube-system
     rules:
         - backendRefs:
             - name: podinfo
               port: 9898
-        - filters:
-            - type: RequestRedirect
-              requestRedirect:
-                scheme: https
-                statusCode: 301
 sops:
     kms: []
     gcp_kms: []
     azure_kv: []
     hc_vault: []
     age: []
-    lastmodified: "2025-02-06T19:40:49Z"
-    mac: ENC[AES256_GCM,data:mj94Mrd1XorjgRnoL+/MzcJic2ubW7kgUQytGwxaGJjC4vZ+vRbOOuyQ3WJl6JwAdh511//MKIKxJNZgtafWv+IW8R4WvwuSsV0oWuIIFz7FV6LC3+GgrXK3haaAcsCqrP/X8Q2VlbFSTPkiK/7dQ/LzxZF8ARe7G5wQEYKZEqI=,iv:6+wgKlAZm0BqH0q+yLRkWArxUKpBm1Jv49dJo23+z0o=,tag:zK+HRmr5+pz0YExNzGQE1w==,type:str]
+    lastmodified: "2025-02-06T20:28:29Z"
+    mac: ENC[AES256_GCM,data:M2UDyRVJw+xo+bFNtHvjS6r9kZdXUE1ytah0Ryfv4rY7JFz3gX9R0xPeTPknp156SVHQcOCOMsbsEq4NJpk7VcaDaBfhlx+JWGIF2jdp31AX3Oq65hnwodJqv78cHx73Qdfb+n083FW62iZfhrh/P+13KXKQeEPWoix9rbtVbSI=,iv:53TBkuE9lUekxVj9GKctFwPrN6JGZ2Nz/3z4zxUqWT4=,tag:OpiaTcCfFXGikhvDZAoPAw==,type:str]
     pgp:
         - created_at: "2025-01-31T00:39:55Z"
           enc: |-

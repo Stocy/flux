@@ -2,3 +2,13 @@ creation_rules:
  - path_regex: cilium/gateway-http.yaml
    encrypted_regex: ^(certificateRefs|addresses)$ 
    pgp: 75305C71C2CBD1BB31E45BC9EB711729A929833C
+
+ - path_regex: podinfo/https-route.yaml
+   encrypted_regex: hostnames
+   pgp: 75305C71C2CBD1BB31E45BC9EB711729A929833C
+ - path_regex: podinfo/https-route.yaml
+   encrypted_regex: hostnames
+   pgp: 75305C71C2CBD1BB31E45BC9EB711729A929833C
+ - path_regex: podinfo/http-filter-redirect.yaml
+   encrypted_regex: hostnames
+   pgp: 75305C71C2CBD1BB31E45BC9EB711729A929833C
