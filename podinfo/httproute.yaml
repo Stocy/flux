@@ -16,14 +16,19 @@ spec:
         - backendRefs:
             - name: podinfo
               port: 9898
+        - filters:
+            - type: RequestRedirect
+              requestRedirect:
+                scheme: https
+                statusCode: 301
 sops:
     kms: []
     gcp_kms: []
     azure_kv: []
     hc_vault: []
     age: []
-    lastmodified: "2025-01-31T00:39:55Z"
-    mac: ENC[AES256_GCM,data:SAvVzQgtyRTsMcUPW8Oin8ZAPvF88TYV8nVbSQ4nxdktrfhjoHomcENgaH8WC+f+BrVFnqJwgDCkGPbQQ+aDMDC9Yp54d4YEFJf0TMPIwyY9oYPd1tJcNmqt9d8rrCVItI7w8ykjfOikcxTr3rDBgUXUMVIkM9VYQ9xUHNtIzXg=,iv:N9IDIwtJBfvhk9p+h0rJ8XaKezGdLSykfeAGAJ8y4xo=,tag:HCbp5TRYUWTFHLc6i1PYSA==,type:str]
+    lastmodified: "2025-02-06T19:40:49Z"
+    mac: ENC[AES256_GCM,data:mj94Mrd1XorjgRnoL+/MzcJic2ubW7kgUQytGwxaGJjC4vZ+vRbOOuyQ3WJl6JwAdh511//MKIKxJNZgtafWv+IW8R4WvwuSsV0oWuIIFz7FV6LC3+GgrXK3haaAcsCqrP/X8Q2VlbFSTPkiK/7dQ/LzxZF8ARe7G5wQEYKZEqI=,iv:6+wgKlAZm0BqH0q+yLRkWArxUKpBm1Jv49dJo23+z0o=,tag:zK+HRmr5+pz0YExNzGQE1w==,type:str]
     pgp:
         - created_at: "2025-01-31T00:39:55Z"
           enc: |-
