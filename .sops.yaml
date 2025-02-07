@@ -29,6 +29,12 @@ creation_rules:
  - path_regex: immich/configmap-immich-helm-values.yaml 
    encrypted_regex: values.yaml
    pgp: 75305c71c2cbd1bb31e45bc9eb711729a929833c
+ - path_regex: immich/cnpg-cluster.yaml 
+   encrypted_regex: storage
+   pgp: 75305c71c2cbd1bb31e45bc9eb711729a929833c
+ - path_regex: immich/secret-immich-postgres-user.yaml 
+   encrypted_regex: stringData
+   pgp: 75305c71c2cbd1bb31e45bc9eb711729a929833c
 
  - path_regex: cnpg/configmap-helm-values.yaml 
    encrypted_regex: values.yaml
