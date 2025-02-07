@@ -1,0 +1,68 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+    creationTimestamp: null
+    name: immich-helm-values
+    namespace: immich
+data:
+    values.yaml: ENC[AES256_GCM,data:xDmxGh8TriSb4PangBnqU3ZpZ0Ue8I2UxBcwR8KxbI5oH5chSmJEWIqi+J4+/aAVzhNCxvb5XFXIMK7ZqiOj58f50xsB03qzenBIIQW5GV8vFYp89ONJo7t9kOPyWa+7TlzG5kE+h8bpaoUa6c0uVGCq8XL4xDQ2lxsIpHXixbKlyNebycduJ7Oy7+a8GJEUect7aKrS/MYbvvmYZN0W2z28nOEIp4u+e08rvn5fCasRGVIruixIcgEG/e5YeGt0J6UaNsY3YI+OF/ncgwU0vmQv4dl1I6xMGft8gtVsP2KY1s5KgHST3MIV6FEl3baO5HZ4mkMErs0XCFc30ARlleXn8k7//tLlPQhtSBZe7BQma+7U2WvfxfxFT6wEASTZsaoauMp2nBizG4jh6fb7mQGe1oxAIvbfheIj521Z7x8repctFP2FId4H7jAy4RNGpzlHyuSsrxGMHvW0M7pTgi2t+pYAy7Wv+A52glzajvNNpatHV8UaHbLxnZr3U7PFaFfy4ttzs4lUgMbZ5lbrBQkBUlDNya0tYL4I3/uHGfDKU9+BpBsaNxyIlH0SVpDDCWXbdXqbdVLchiKLtls3IHGTs0FYJXHXkLe+qER30SUrNcWZtLGVS88/Cl95GwrMFmPDVXkiAy4fNMpblx6uHdaX99LkTwwKn4efn8YwBnc7u35Fv38yohmAQbbzHFxLdBlaGxL95SdY5z+Lu5IXkHB9aqRWCo+J9C/0dXGnQ6YJHuTiGxEtbAYYUrw4RDJp2KqgOaXteg2XTQ5OlrtpLNTbmGlpTQx9KMoF/rUYEclmLl+11+FLvdRjWk6XMn2lZAjEYVnpKuSZASndBx/u4RxI0hLL/bFISpqjCgkTTUIxnWIPs43otxKNW4a+27MDAKIQQGXfbrNjJJG5nMIQzNMfXSgS1PqQVA65JmrLeJps7tDKuCZ+uvjZNEZDrKUWYF/sZZKVh/Y8BDKj7R6JuxT6d/8RP8NuJcbBQfbJUOXrp7Fz6XkQv64qWCQMXtAQFYRqDEbeMwrui9mVLgHMIlJFet7eaAgGi9N+XTbGZfIPq96zmGJA5VUvRe/Hz4LPUupG3O1MvezjUwU+NdVr/WEMLhALoyerBbUoiWMttAYWuuRWpK0M6aCOLZQOVY5cXh5Tvt2FiuE6cMXZcv/ikSZ5tElnUQzL9XdENPIIptIuh+79tBZ99wAAd44cVDy6Ca77rYEQOVW4nf+gIxxJq8dprq+MyNK6Q+9vweoIGB9AwA9yvVyVmI4nFBUtzJwe/ywrzGrNhWg89V7bFA7Z0ZMSio7lFEq3CQKOx/AavDN7mTla5FdzGcg/zUNzfsZO1pQ98prUqUObwcC5OgzHLzEHHtp7rxl9jdI5cVbFKiEv636d052w/7KxO0uutwM5pFeC/1hBXPIyQ9EwGyDdXcVbXXc3tJvfd2Mm+RZZAkcaNqA4YHEy+zD3LVqr+SOlCooCQqqqsFxUNdCUmzzQsQwrxX9m6KyYtzS/eMI5ktiXw/i0gTzHzSePyzQ4WKTqe90sCfaSlgmS9LCdvDFheKkql4N5ueBXWft1vDU6EQ5GGxpQ28mi6cT2hqjEow0TnWjwcEMHWOP4UQbIs9ooyIGT7bpit7Jrd4zcUwbPztJSpfq+iuUHIIggdFV2PgGFKUPJKSIzaETWNFMbBCHHIE50u08lSnWRBCEUM/MZ+WtAC/nWkntZC6vFEzOKROkv02dhRQAiYQtElW6HXWd7MAZpXp7H4z1TJ2rXqHxKG2JZUHe2G+Z8Mb/2cA3nb6gNjX6UfTO6h0vvbJGXPVLowMoDT4K07UP4OsxS/OyQ8EX5XFtsnkamE7rRLKq9fzhhf8TqlZZgBxKxKYJQLN9HHZRikosKi1v+bsUShzmNBSTbGjpDYTs5l34e5kUmmAe2I0jmoFTitXrXXvm71onsPdLx44L2DfAreYtiMGJT7TMVi1GxbV1gKtgkzbDioFNvdNrUCsdfjfdMshlL5h54Rq4ns8usnY8HN5g55zknVjV8rJS1rAhlI8IuzbuspPDL0grWaJYxi5dWDOlW8EyVca9YTwf7ofvyZsn2dMFKWOID8TRw4cp2ZOVSvh/G9tpFW/S8/dfxlk87MAFuV1Q8WMlJzeFEcK61rcq9dX1Etx5aWdhbnkbLdH3NAqco4tvHGujqxUWmHcc+tTRQkn/hw1jVrvBLiw6Xhcwv8LlZo9LlBC6tBqPSoUBjxw7LsLyzawu1HASLPIKYrv0vNgh60er76K07Un/fLu6rYn+O0sTrlsyD1dT6UQQaSi0ccoiOzG6YRawA3qGkHzkLIUwPzOJXHu8GN7JmbMH64FH72biDE57H7ScaOlhtWP1Haa7z4vIaaOv5p+/5NULIMs2SMN716TaRCr6uGfEAsX87J+qpBxL4q+2l2wSZPFU/kx0v0EiyK9qyi3iuxUlX8ghuo9VNYs2JKKeup5LjiEHJNlAKyVjK02wyGSB2LmEUcFunBbhATcjL82E4yV4KeH1Wo182iXDPtdUGTxIQazcBGhgrA8CaPSHDbyAHEo269Z+MBbqAwO4EsiE5ewei9Hu0FKyg1p41Q6Cf1hKplXlM1YGzgYIrjchvmvJxAj+St4ABE+1eo+W9rE3CsNHI7H9+xm4DHz+mwh7UDyc4DgQpgvlihH5Dj5ZivxqVdhOMYU2vFHhQEBanfv3TGEfTBjvPvFwZl+EFzP/zQYYLt2oSyZhLaj0G8XCjtDmxdXLA6LVLAvNQf9xMT70U0UE5oSS/Uu+dRurlqNwsT7EcPiN7LIaAv4OvUhoQxNf9Z9Yf5vLhlYFum/Hf7j5FYGzbVL05YJoBg/NvsfCkgWWal8eAFr423YklfGJItu+ZqoIPW1WSFbDYKqgl/E7ZtiQMdTi6ownOkS0Zem3odRxUT9LGgP6n48NxHrRAavJxHMu5pVfnnlAwJjyEYTcFjkxDXbDMTOj0kLJpP28VSdEguMLhYWmdvxea5dL2ItJqpwmWLQCLYUDzFaHW4r913xGDYH1mOgyc0Cy2wK+PPJ2SOSN4Q1V3kg98IYsCbO8edbn9J7iGwCH5ETMGMpC/+F8q1+DPMwW7oyzGWIu/BVPPyYJYgfi2RJj+983Y5lHtTUWPhYYnGv1cdIPNdtl7k7K10+7hIcZJveEMEc9Rw7uhNSGl+Vb0C+Xs5jAVrexDUlyXep1qEgzlaCwVVYtFqs7+4X7S2WVcLUSPL4z8Orc05R4UXTuGIeqHbUesDrkXWy5v/yhAqHPo1hQqDzf6JaygYTlXxPrtxK+JdeqYXOaDzi6mJtztl9zdJ/aZuq2ZH7cD85WBnuRzJAGiYNJhtXD1gVzQDhlWifsZ/Yb8+X8+zuDCydG70uTuEz/j7/BeiYiIV3AycFqvk9jS4YQ0rgJJdPPmhTo9PcqSzooqGUPCFMRJInvlhNukf0c3rqDOCYvw4WAXY1jD50B63vwhOBGj/ePQnHguftUTwwZUp4QecFD5eAjOYR6ZzR+C5u71T7nylu7LUIF81xQ5y83ofOOwMRhx1yTYdjl+e9nSc6BLZoWVpv/CTHkSN6+3XxBbZlrXvBb3lWykLG3VmpHrad5KQ4b+sB7VEXG5BUeKsdXAFgQRASmaHwr//YrARUZyG2zgZPJSOC0CyfA2VeEKD0CuIX6UT7tLDutklzTKn2j9CrlzLKadinhf0xJaeq2CS8Cu+L+QmYMqhib9uN/20FPR/l/a2TlG9QMobsXCkX4oTDAxuWBLg/Ew7IP+C3n2ybl2V1NTvsiHzseCwrVnVA+2sNK3bpmA4f6d1Om2xMz6alLaLjzK50K1GaU=,iv:ynuIDB7cwnFWvXwgkc3MnkjsRzoIg6Q3pP5gLoHqkTo=,tag:IJ4hF6tXff8JGH++tS4tfQ==,type:str]
+status:
+    conditions:
+        - lastTransitionTime: "2025-02-07T00:14:49Z"
+          message: Running 'install' action with timeout of 5m0s
+          observedGeneration: 2
+          reason: Progressing
+          status: "True"
+          type: Reconciling
+        - lastTransitionTime: "2025-02-07T00:14:49Z"
+          message: 'Helm install failed for release immich/immich with chart immich@0.8.5: execution error at (immich/templates/checks.yaml:1:64): .Values.immich.persistence.library.existingClaim is required.'
+          observedGeneration: 2
+          reason: InstallFailed
+          status: "False"
+          type: Ready
+        - lastTransitionTime: "2025-02-06T23:42:36Z"
+          message: 'Helm install failed for release immich/immich with chart immich@0.8.5: execution error at (immich/templates/checks.yaml:1:64): .Values.immich.persistence.library.existingClaim is required.'
+          observedGeneration: 2
+          reason: InstallFailed
+          status: "False"
+          type: Released
+    failures: 1
+    helmChart: flux-system/immich-immich
+    lastAttemptedConfigDigest: sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    lastAttemptedGeneration: 2
+    lastAttemptedReleaseAction: install
+    lastAttemptedRevision: 0.8.5
+    observedGeneration: -1
+    storageNamespace: immich
+sops:
+    kms: []
+    gcp_kms: []
+    azure_kv: []
+    hc_vault: []
+    age: []
+    lastmodified: "2025-02-07T00:34:31Z"
+    mac: ENC[AES256_GCM,data:15sKnxCk5POxL0RJXspQPeKxa+dGgRp2F6+WWovo8e67J0zbFuiNffh4RlRd8h/rALBkolUFZw85PsqqhX6zHJtUYE3/JFDg8d/eV8Jm8xtiFes3SLGOmyy3TRLkV7ON4V1rw+xJbNwhZKnMXPs4NmwqDx8SewigV5EVCy0aHqI=,iv:1r1xSEmBPnF8Z91+6Y2kG6zw16NiP4prvzyGFwCbUgY=,tag:/rQevXBIEbrzMvEguGQoyw==,type:str]
+    pgp:
+        - created_at: "2025-02-07T00:34:31Z"
+          enc: |-
+            -----BEGIN PGP MESSAGE-----
+
+            hQIMA262vqLG74HEARAAqjn9qhnzNmIHL07f2Ncuyqw11Wh9alqDM7nT2Y5uEW1a
+            OfGVEjJXytv6ioS5zYpElsPbmRMhaOv4F2tNy3ECzuQtwJiDiaA59MmGg4bcvXvP
+            /rFPpc0aP7qJxGEomOUI9H8+LBUKLSZUlTkMQvDRpI0CX7QTLy8K+Ozvkr5pBnO1
+            pkpLw1m0AUn4wd80/4TmmWDYNeMVWLpxWZ+xmuGRwBZmiPsmH2UfeYNv6A7ViXDf
+            WSGWIg3CM2SGNnf8dIHkcHwNFremzYQ8v+nGb7rnrAA4ydag7gG8iw22xllgaCoA
+            dkUzkc8gqVFztDIizNs0RXp3/h6OjaSUtSv1hBM9ovmRbC1LLoyfSA71d2CUByPl
+            V9tU7jIKJ0kmhHTcoCGfPOi+e8OCwbg7TXRna+a9dUsVfBUZgf9qj8JopJQMUAP7
+            0c1WwvJi4OMEqXvzBWz5OVdiZhRViCO4OZ2l3ZuqRGRahmTYlAo6coxO7wq3OsQ9
+            CcHjlAGEUreqylHdGsylvjixyhQmKt6ZBlsW1CkiAetJQ6BmKF6ZfKkapQgmKUtz
+            Qjt1AlosjNn6sUTEpRd/DpXsF3X7GIkgKbsebSONEnhkFCcpg/i03hMbgxAdT/LB
+            2qrXEGS0F9wGAJ/N9oEArKxZ9g5i+FyTjaOYqCqUnEBN7KhCWOyxptRf3WPE0gPU
+            aAEJAhB2ULNlkHaFEW+hObmU6MF2GosIabuErFZrPhUn+K4gI+heXsIB/kdqopwY
+            x7lIw1Fy9CFTVQPkkcxO/v06i3wB0/xpFZC5fx3jJRZX8OB2BiE9DGjkD4uZ8eM8
+            RdmKZz9mm5oU
+            =Wpp2
+            -----END PGP MESSAGE-----
+          fp: 75305C71C2CBD1BB31E45BC9EB711729A929833C
+    encrypted_regex: values.yaml
+    version: 3.9.1

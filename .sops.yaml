@@ -24,5 +24,8 @@ creation_rules:
    encrypted_regex: ^(requests)$
    pgp: 75305C71C2CBD1BB31E45BC9EB711729A929833C
  - path_regex: immich/helmrelease.yaml 
-   encrypted_regex: ^(values)$
+   encrypted_regex: values
+   pgp: 75305C71C2CBD1BB31E45BC9EB711729A929833C
+ - path_regex: immich/configmap-immich-helm-values.yaml 
+   encrypted_regex: values.yaml
    pgp: 75305C71C2CBD1BB31E45BC9EB711729A929833C

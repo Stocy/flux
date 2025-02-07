@@ -20,36 +20,8 @@ spec:
     interval: 15m
     releaseName: immich
     timeout: 5m
-    values: ENC[AES256_GCM,data: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,iv:hVR7xOHOP7JFyj07fvgr1slznthX6S5HTzEbCutszgU=,tag:GY2pHsPehrpOJ1IlfxV/tw==,type:str]
-sops:
-    kms: []
-    gcp_kms: []
-    azure_kv: []
-    hc_vault: []
-    age: []
-    lastmodified: "2025-02-07T00:13:48Z"
-    mac: ENC[AES256_GCM,data:8f+1HLwuslU4MyhQpuQ+TwXxlOlA49gbqmLKkvyeKJUjeszrtwcL/D8p4+UpmnVNZkrwEuptGGdlw6I2ajA7Ehz/CYPxGBO8nuNDcEEfncx/WdA9QZ1ggF4SHWpaD0SlgDokINEo6jyS8LVHnJa5fidERmbQQxoL3ZYqRi3xFS4=,iv:RF4jwi73bHjWBwyIPh97CHq/Gz+FD3rCWGZrSLtsfUI=,tag:8Diq03nBMgoGaE/oHfHYaQ==,type:str]
-    pgp:
-        - created_at: "2025-02-07T00:13:48Z"
-          enc: |-
-            -----BEGIN PGP MESSAGE-----
-
-            hQIMA262vqLG74HEARAAl3FlP2pPImLEt659puRmmUFywfvcueoNoV0g1Vf+MWqV
-            KdS+9E9/VzADNdO57ezhP/Px6yJ9MGPbEfCd6FZytBqsy8wutb8llzK6mgc9MiiO
-            CutODxSFS8dEu0BUhI8tWzPXm/6UB+5GL6WT7QUfc7HagMBNRSTNSWPn+vj0pSpj
-            +pc0M47kgGNZOKGIrZkpcq6Lv2gyV0wTrRNMB60LbUf/LJqgJ85YK++Gepn0e95v
-            Uojc91mnNDdtSnlwp552owULl59CvJpxsSkI1M/OxW7Fkg9Hxpp6Szqw9WHuK3II
-            UKBlJ4SGTWyiXTwoYlLGMCko0rMYaGYs0feOXEqNVHCxS0Mad9GkviYBFfgdSyQj
-            i/2/JnnzlISmrkdR5iMKhkuT08iM9kUmrQZeb627gGgbOpub5erWoG++VG/xkAiB
-            laDZx4ULT9iM6TZyS39mUd01cs45tElTaW08uzfx3gH5MX0V186AfVVBWmelWMQw
-            VYdXBP+BtwiYQOLuGUBH8/Av1m+rJfZEe0XMkibSaGzXRqjyt/cDdZ09WQi+g2Qm
-            4m2LijiF2MILpt0ocTK1m3ymuHJF8MDgYDsE85ywDVli2pLbu2xG2Zo3EQHQMVJh
-            Mtd5zdHvcCtFChziePhmyALWOOo2dvH0515ngUI3U0UlRAk5NHp+EET7XtFXSuHU
-            aAEJAhB3kQXmQf4pk6UnHG0bc5N8BtWVRcNc/fHDJUqiyPWK7UAePDU8GaDal105
-            OrMzGwwLz8jwO+RjFNlCPgKxaqcH5nxVvFu5nklwLIXadR+sd/WzLKTfar/qlCcM
-            9QBVAZbBJbTE
-            =Y2Kk
-            -----END PGP MESSAGE-----
-          fp: 75305C71C2CBD1BB31E45BC9EB711729A929833C
-    encrypted_regex: ^(values)$
-    version: 3.9.1
+    valuesFrom:
+       - kind: ConfigMap
+         name: immich-helm-values  
+         valuesKey: values.yaml # This is the default, but best to be explicit for clarity
+    
