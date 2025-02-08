@@ -1,0 +1,12 @@
+apiVersion: kustomize.toolkit.fluxcd.io/v1
+kind: Kustomization
+metadata:
+  name: local-path-provisionner
+  namespace: flux-system
+spec:
+  interval: 15m
+  path: ./local-path-provisionner
+  prune: true # remove any elements later removed from the above path
+  sourceRef:
+    kind: GitRepository
+    name: flux-system
