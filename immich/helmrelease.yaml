@@ -16,7 +16,7 @@ spec:
                 kind: HelmRepository
                 name: immich
                 namespace: flux-system
-            version: 0.8.5
+            version: 0.9.0
     interval: 15m
     releaseName: immich
     timeout: 5m
