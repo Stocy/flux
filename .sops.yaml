@@ -46,3 +46,6 @@ creation_rules:
    encrypted_regex: values.yaml
    pgp: 75305c71c2cbd1bb31e45bc9eb711729a929833c
 
+ - path_regex: victoria-metrics/configmap-helm-values.yaml 
+   encrypted_regex: values.yaml
+   pgp: 75305c71c2cbd1bb31e45bc9eb711729a929833c
