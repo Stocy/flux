@@ -1,4 +1,7 @@
 creation_rules:
+ - encrypted_regex: '^(data|stringData|caBundle)$'
+   path_regex: 'bootstrap/config/.*\.sops\.ya?ml$'
+   pgp: 75305C71C2CBD1BB31E45BC9EB711729A929833C
  - path_regex: cilium/gateway-http.yaml
    encrypted_regex: ^(certificateRefs|addresses)$ 
    pgp: 75305C71C2CBD1BB31E45BC9EB711729A929833C

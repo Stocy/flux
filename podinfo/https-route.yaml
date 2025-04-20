@@ -7,8 +7,7 @@ spec:
     #  hostnames:
     #  - example.com
     hostnames:
-        - ENC[AES256_GCM,data:NH1mIKl9H+5rJWlN,iv:QvnUlM3CvfLjeaxKZnwkjo2NzjFfcCrAZ0y/nNf9FEU=,tag:s4ipOh58Pnm89jhaPlNm6g==,type:str]
-        - ENC[AES256_GCM,data:+bC0iDSc2oAG3F0AKeE6sPK62NM=,iv:4SjDZEzwY+1+L7fuZeXzLP9m/IsLjEu2n2esXo6HqW8=,tag:xSRwcqn+8Dfx1++B7XaF7g==,type:str]
+        - podinfo.${SECRET_DOMAIN_0}
     parentRefs:
         - name: http-gateway
           sectionName: https
@@ -17,35 +16,3 @@ spec:
         - backendRefs:
             - name: podinfo
               port: 9898
-sops:
-    kms: []
-    gcp_kms: []
-    azure_kv: []
-    hc_vault: []
-    age: []
-    lastmodified: "2025-02-06T20:28:29Z"
-    mac: ENC[AES256_GCM,data:M2UDyRVJw+xo+bFNtHvjS6r9kZdXUE1ytah0Ryfv4rY7JFz3gX9R0xPeTPknp156SVHQcOCOMsbsEq4NJpk7VcaDaBfhlx+JWGIF2jdp31AX3Oq65hnwodJqv78cHx73Qdfb+n083FW62iZfhrh/P+13KXKQeEPWoix9rbtVbSI=,iv:53TBkuE9lUekxVj9GKctFwPrN6JGZ2Nz/3z4zxUqWT4=,tag:OpiaTcCfFXGikhvDZAoPAw==,type:str]
-    pgp:
-        - created_at: "2025-01-31T00:39:55Z"
-          enc: |-
-            -----BEGIN PGP MESSAGE-----
-
-            hQIMA262vqLG74HEAQ/8CnVZz2DrdjaeClxNOdBLV0q9daPNp6ogdiVS21UOu1tr
-            5tZ7+x00GP5ocdS05dMn1NC08jT0btVgIwLXJ75N4USt/QrCQckNXwUqM3I6kLX9
-            ZJrluxr5SiJncv4GRJ72ivmHAkNIVwJmo3/Gy/W53WAcmtI/mxB3F9RWunAoZvmt
-            WFlF/H1iQ7Ct5NKAlFg85gTmcskmXjcq+Acax7yAGcMK1VMibOYjQKkYO5FNcKeZ
-            PnLKXkBxDiGv5rQJ2QQuZrWueY3+PnnQCg22rGRUByjupXLI8t0TnbJP+d24YIfP
-            wcoUm7QcbGSxno16xBumjehbO3UrncK9R08B9vkLQc1yeKGDd5hN2LvKd5kOsSuZ
-            wlNxZDaVcAB/4SPUiau2DoiAkN3stogq3v49KBLjmdC057UJU7ME4kmYGROdJqgY
-            ffc1BdKbyv3dtsnJt5B+jpa41whkJFuRWb0PCfoFzTOM5AD0J/IMPssjpwrgg6Ve
-            7IFX2V2gXcdY1Fx0bkZhyjSoaJqUr38vVx3q90Jwm4W6OcCSLhy821H18viuDbuO
-            cvdy0JusQtwKitdxU4oE/MGeH41vnDpLDCnwWQs6PbZibK9GIZl01M7dxhWelMzl
-            rzVvDvyGPVPYS/dMnF3BxHJtx+I1B9xinYlLwNynXK5D4+yF1jlSLJqA/pzyhzXU
-            ZgEJAhA6Fjs+23C7hQ8dlS3Tx56fwx9Or6sFxVJJrWq5WrqqXHG34fFJIP0d26zG
-            a7Iji/p3XRXD0yVY+qk6v7P7GgIsVCB/vpRmm4DO3j1XZv6s6WWC5iJLNzWip+xL
-            SP0JhpuIGg==
-            =f2m1
-            -----END PGP MESSAGE-----
-          fp: 75305C71C2CBD1BB31E45BC9EB711729A929833C
-    encrypted_regex: hostnames
-    version: 3.9.1

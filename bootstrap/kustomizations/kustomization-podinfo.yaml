@@ -15,6 +15,12 @@ spec:
     provider: sops
     secretRef:
       name: sops-gpg
+  postBuild:
+    substituteFrom:
+#      - kind: ConfigMap
+#        name: cluster-vars
+      - kind: Secret
+        name: cluster-secret-vars
   validation: server
   healthChecks:
     - apiVersion: apps/v1
