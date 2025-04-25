@@ -10,36 +10,4 @@ spec:
         - ReadWriteMany
     resources:
         requests:
-            storage: ENC[AES256_GCM,data:a3ScDxY=,iv:drkgtkfmJ2ZN9e0PI+lC0/dAzWuuKfuR8nIcjLaWsVg=,tag:oomKpM9D1WXW3XwIv4aMTQ==,type:str]
-sops:
-    kms: []
-    gcp_kms: []
-    azure_kv: []
-    hc_vault: []
-    age: []
-    lastmodified: "2025-02-06T23:21:45Z"
-    mac: ENC[AES256_GCM,data:6iLbuZCeEMkZ/gf0xbVk3y0t7q/b8ELzFLu18xTTf7QZFLFi/aSiDrzrK4n6o9EiU+B4Pbmgc/oEzX2kZinA9xEex1riGk+N4gFZT6J2LhCHN5++USzpV9CTeBFGP/LTKukE1nqc8Haaf6BnJuP1uBWbQfVQQO0SPlrW6MKD4DM=,iv:cZwlU0jFACKQd1YNW3oHIXca3NLdzgNSxUpk3QB64RI=,tag:4ELEvdzrPL5aTguBfbXO2g==,type:str]
-    pgp:
-        - created_at: "2025-02-06T22:53:25Z"
-          enc: |-
-            -----BEGIN PGP MESSAGE-----
-
-            hQIMA262vqLG74HEARAAl4rP2k72dNa7w8N/a/lO+Czi50SKZtyZ6w6lAek0kZZe
-            4E3UxjR0hRksywkzIfNf9DYTeuo2QxTUzFbcfNW+pIuED8ULI1oF5Tsd8sIpG+2n
-            CKQTqzTbPiuW875Ik98M/M50YB555TaDrayj1LZJiVrrRUQgOY8xyziKoWgc4o9A
-            9yXgiRUziMI8dmeqdfuOBiPP0HoWYeJfK+x43Pjsh5WcstbPkZRJ1AisXdVFXZmf
-            2m7Y9taJ2vBbHBxtAC732M5bmcWqApxGYqyfOBqcql4WhjuSLDvC3eJgQHQf/5Fh
-            Di4EAFkY8eYT/rQyH1jzX9cHu7qLsgL3XEF1DbFiPlTpE787Hq3EYgdroCKhv5Br
-            ZW7flR7EyHHqH4p3lHCcXqU7rDBMnRpXUKLeM0Ldd2B+JypWjcsNAWemjMhxYtcY
-            3kavOFs58QKM6ER3pTb5dt1P4DvCT5obVyQi+tLSgATlR23GPPbHM6i4h0a8UD6p
-            ZKb3HzegMUV7oE4q0JaOogMo1Y426Fq+NlIllMleuROXuocsuS2JI3uFVQmx6sLy
-            zIwHim/dtmBUqbecxpHWSEf0u8d2y+AugRKrgw5KRvl+bydqHEFSO+s80m8T58i7
-            IcLp5qYFgxtyTRdJtBeBLRe2T5ERSnUEZd40AVAJ44UIwiz768qyrZD+k1SgDELU
-            aAEJAhD6y3daoZ+YUefkAgLoWPpiq+d9dixUjo7CozBqnROfmeBdnUPXFaky1rYD
-            QXlrvYjF6TEvr9fOBRzTuHEU3zKS5y4Z0C87e9DtczR6kq+Eu0xdkYLk8aPHV8HM
-            B+FsjuX3ncOz
-            =NVSc
-            -----END PGP MESSAGE-----
-          fp: 75305C71C2CBD1BB31E45BC9EB711729A929833C
-    encrypted_regex: ^(requests)$
-    version: 3.9.1
+            storage: 300Gi

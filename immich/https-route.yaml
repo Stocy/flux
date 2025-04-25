@@ -4,10 +4,8 @@ metadata:
     name: https-route
     namespace: immich
 spec:
-    #  hostnames:
-    #  - example.com
     hostnames:
-        - ENC[AES256_GCM,data:/Q6f8U+4xlS2lTxiVxqKDNIHmQ==,iv:z/CrkxzuiUvEedMWiij8IYPGrqgA+uoVrnd5pChRKmg=,tag:7bxVaKJiLkggwnp5y3wlbw==,type:str]
+        - photos.${SECRET_DOMAIN_0}
     parentRefs:
         - name: http-gateway
           sectionName: https
@@ -16,35 +14,3 @@ spec:
         - backendRefs:
             - name: immich-server
               port: 2283
-sops:
-    kms: []
-    gcp_kms: []
-    azure_kv: []
-    hc_vault: []
-    age: []
-    lastmodified: "2025-02-08T11:51:34Z"
-    mac: ENC[AES256_GCM,data:2dDxWctLszA42a7ZC7JL+DDH3kPhrsmRuXQGJVZYd/NQ47A7ze8+MaqzF3LUq9KRNUd/UacNDTfGrAdVHL13IhGNDOMrDOq7W/GTyKTiQ0j5hXh8HEd6307nx1TL3sjbNoxHNFoIqAHJBl9jE7WB7jeccTUEBj4Y8I1FU7GFlqU=,iv:GUsNV3zOW7Y05VvuFKvtj1UQITcALX4oZRoPQCHZ2F8=,tag:ycp+MDbT2wADnp0gcZjkqg==,type:str]
-    pgp:
-        - created_at: "2025-02-08T11:51:34Z"
-          enc: |-
-            -----BEGIN PGP MESSAGE-----
-
-            hQIMA262vqLG74HEARAAgwUuVWu8HLR9ZWTRRZifMG9UkYqS6k3NiTqxR5O3JpQs
-            uvZmzC8+TnxliQ2Far34S7o34x2TS3G2LpX0IRQOQf1DW0OnZOG9uBV5wU2BLvco
-            i+t0a5yItfZxooI4Nant8Zh2PD8SG3dvkJeuvNFPK0SU10p+UgxQSg33OLLfVlzJ
-            eZ2P5dp83IYzIWosUpmPCpmJ3Xhp8anBoPsxo4s3M1mmefKRe5dfLt56/RfYRK0I
-            ZTux0kmmXUYu/Y5uS8sPyHxMvdS9mR8nZEtr3VqaA/4leriCbw5wsPhXWkDZi9Hs
-            nhCDMI5oCLtNsONlc9XcDMbOYj11Suw9+3MOlJ7AT+reRevRfNDibXQ4ugaso2qz
-            0QhnkNmNPfjA9TvTUCUcM0i72NB9v9poqjo2elnYiKHHlgu6M6C2F1qOGwtnWQlr
-            nazhK8mbcolGqkWBmXxNu5eWyRwgV1m3gSEfU3OZpXn/iiJBQltFWA9wmwxWNoPK
-            wSWc+ypH4aODHnRHCh0VEaFPs23ZMFt6Soj/hrtCAdx3vpYb1ASObGrnWPiz6wgh
-            3PPLUpTUh5ImmQ9xYhXXOqYr95JS2gZQayMt2SxdXah98GAgHC5Kx4ROwaVX3NT5
-            vJzwf3u0GikH44MeUh3ToK7S3lkAQd/2T6ExvQHqlM9DAFwwqWmJPUaW0ce1hNLU
-            aAEJAhBStjX4AcWt82xT+XMjcskwhZ35A1mOgioUFXHjP/2YXv1L3a8tL09eX3EF
-            vL3dzY3F0nQAxzvaOLJbm9ioEvTqyI64ObS5u4zq7tyG1cKfQnOqXx0xMLXRKHkX
-            Ngq5vqSTtEqR
-            =t0Zu
-            -----END PGP MESSAGE-----
-          fp: 75305C71C2CBD1BB31E45BC9EB711729A929833C
-    encrypted_regex: hostnames
-    version: 3.9.1

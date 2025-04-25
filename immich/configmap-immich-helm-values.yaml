@@ -5,64 +5,113 @@ metadata:
     name: immich-helm-values
     namespace: immich
 data:
-    values.yaml: ENC[AES256_GCM,data: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,iv:hXGef2LiTfLGG7GafXi0dP0iaP1BhAKSeAtz0X1uT6g=,tag:gWnAzR5XxdsqxEvR08fIRQ==,type:str]
-status:
-    conditions:
-        - lastTransitionTime: "2025-02-07T00:14:49Z"
-          message: Running 'install' action with timeout of 5m0s
-          observedGeneration: 2
-          reason: Progressing
-          status: "True"
-          type: Reconciling
-        - lastTransitionTime: "2025-02-07T00:14:49Z"
-          message: 'Helm install failed for release immich/immich with chart immich@0.8.5: execution error at (immich/templates/checks.yaml:1:64): .Values.immich.persistence.library.existingClaim is required.'
-          observedGeneration: 2
-          reason: InstallFailed
-          status: "False"
-          type: Ready
-        - lastTransitionTime: "2025-02-06T23:42:36Z"
-          message: 'Helm install failed for release immich/immich with chart immich@0.8.5: execution error at (immich/templates/checks.yaml:1:64): .Values.immich.persistence.library.existingClaim is required.'
-          observedGeneration: 2
-          reason: InstallFailed
-          status: "False"
-          type: Released
-    failures: 1
-    helmChart: flux-system/immich-immich
-    lastAttemptedConfigDigest: sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-    lastAttemptedGeneration: 2
-    lastAttemptedReleaseAction: install
-    lastAttemptedRevision: 0.8.5
-    observedGeneration: -1
-    storageNamespace: immich
-sops:
-    kms: []
-    gcp_kms: []
-    azure_kv: []
-    hc_vault: []
-    age: []
-    lastmodified: "2025-04-05T22:52:37Z"
-    mac: ENC[AES256_GCM,data:DNnBHhhHFQAGF1bS5jHIKgbsP3LaP9OEe6xt/vhe8KIqI2R6JsTRTTy8Mx/+EtjDhC8JEeYX/MK52RfNmnabhDId8oKIv75/VvDLp3iA5o6Sf7VTZ9Hy336nnwlieNQpTKNasV8WXc1DyhVjloLSmw6MBzS2Jn0deiXi97BSWuU=,iv:bc2aQ2tU57CQ1GyEbmyHvcZ0XCbSz3o+EBjfBL2Nzb8=,tag:ejGO4PkEFr1R2txRLUW5ug==,type:str]
-    pgp:
-        - created_at: "2025-02-07T00:34:31Z"
-          enc: |-
-            -----BEGIN PGP MESSAGE-----
-
-            hQIMA262vqLG74HEARAAqjn9qhnzNmIHL07f2Ncuyqw11Wh9alqDM7nT2Y5uEW1a
-            OfGVEjJXytv6ioS5zYpElsPbmRMhaOv4F2tNy3ECzuQtwJiDiaA59MmGg4bcvXvP
-            /rFPpc0aP7qJxGEomOUI9H8+LBUKLSZUlTkMQvDRpI0CX7QTLy8K+Ozvkr5pBnO1
-            pkpLw1m0AUn4wd80/4TmmWDYNeMVWLpxWZ+xmuGRwBZmiPsmH2UfeYNv6A7ViXDf
-            WSGWIg3CM2SGNnf8dIHkcHwNFremzYQ8v+nGb7rnrAA4ydag7gG8iw22xllgaCoA
-            dkUzkc8gqVFztDIizNs0RXp3/h6OjaSUtSv1hBM9ovmRbC1LLoyfSA71d2CUByPl
-            V9tU7jIKJ0kmhHTcoCGfPOi+e8OCwbg7TXRna+a9dUsVfBUZgf9qj8JopJQMUAP7
-            0c1WwvJi4OMEqXvzBWz5OVdiZhRViCO4OZ2l3ZuqRGRahmTYlAo6coxO7wq3OsQ9
-            CcHjlAGEUreqylHdGsylvjixyhQmKt6ZBlsW1CkiAetJQ6BmKF6ZfKkapQgmKUtz
-            Qjt1AlosjNn6sUTEpRd/DpXsF3X7GIkgKbsebSONEnhkFCcpg/i03hMbgxAdT/LB
-            2qrXEGS0F9wGAJ/N9oEArKxZ9g5i+FyTjaOYqCqUnEBN7KhCWOyxptRf3WPE0gPU
-            aAEJAhB2ULNlkHaFEW+hObmU6MF2GosIabuErFZrPhUn+K4gI+heXsIB/kdqopwY
-            x7lIw1Fy9CFTVQPkkcxO/v06i3wB0/xpFZC5fx3jJRZX8OB2BiE9DGjkD4uZ8eM8
-            RdmKZz9mm5oU
-            =Wpp2
-            -----END PGP MESSAGE-----
-          fp: 75305C71C2CBD1BB31E45BC9EB711729A929833C
-    encrypted_regex: values.yaml
-    version: 3.10.0
+    values.yaml: |-
+        ## This chart relies on the common library chart from bjw-s
+        ## You can find it at https://github.com/bjw-s/helm-charts/tree/main/charts/library/common
+        ## Refer there for more detail about the supported values
+        # These entries are shared between all the Immich components
+        env:
+          REDIS_HOSTNAME: '{{ printf "%s-redis-master" .Release.Name }}'
+          DB_HOSTNAME: "immich-postgres-rw"
+          DB_USERNAME: "{{ .Values.postgresql.global.postgresql.auth.username }}"
+          DB_DATABASE_NAME: "{{ .Values.postgresql.global.postgresql.auth.database }}"
+          # -- You should provide your own secret outside of this helm-chart and use `postgresql.global.postgresql.auth.existingSecret` to provide credentials to the postgresql instance
+          DB_PASSWORD: "{{ .Values.postgresql.global.postgresql.auth.password }}"
+          IMMICH_MACHINE_LEARNING_URL: '{{ printf "http://%s-machine-learning:3003" .Release.Name }}'
+        
+        image:
+          tag: v1.132.1
+        
+        immich:
+          metrics:
+            # Enabling this will create the service monitors needed to monitor immich with the prometheus operator
+            enabled: false
+          persistence:
+            # Main data store for all photos shared between different components.
+            library:
+              # Automatically creating the library volume is not supported by this chart
+              # You have to specify an existing PVC to use
+              existingClaim: immich-data-pvc
+          # configuration is immich-config.json converted to yaml
+          # ref: https://immich.app/docs/install/config-file/
+          #
+          configuration: {}
+            # trash:
+            #   enabled: false
+            #   days: 30
+            # storageTemplate:
+            #   enabled: true
+            #   template: "{{y}}/{{y}}-{{MM}}-{{dd}}/{{filename}}"
+        
+        persistence:
+          static-library:
+            enabled: true
+        #    type: persistentVolumeClaim
+            existingClaim: immich-static-library-pvc
+        globalMounts:
+            readOnly: true
+        # Dependencies
+        
+        # DEPRECATED
+        # The postgres subchart is deprecated and will be removed in chart version 0.10.0
+        # See https://github.com/immich-app/immich-charts/issues/149 for more detail.
+        postgresql:
+          enabled: false
+          global:
+            postgresql:
+              auth:
+                username: ${IMMICH_DB_USER}
+                database: ${IMMICH_DB_NAME}
+                password: ${IMMICH_DB_PASSWORD}
+        redis:
+          enabled: true
+          architecture: standalone
+          auth:
+            enabled: false
+        
+        # Immich components
+        
+        server:
+          enabled: true
+          probes:
+            startup:
+              spec:
+                failureThreshold: 99
+          image:
+            repository: ghcr.io/immich-app/immich-server
+            pullPolicy: IfNotPresent
+        microservices:
+          enabled: true
+          image:
+            repository: ghcr.io/immich-app/immich-server
+            pullPolicy: IfNotPresent
+          # resources:
+          #   limits:
+          #     cpu: 500m
+          ingress:
+            main:
+              enabled: false
+              annotations:
+                # proxy-body-size is set to 0 to remove the body limit on file uploads
+                nginx.ingress.kubernetes.io/proxy-body-size: "0"
+              hosts:
+                - host: immich.local
+                  paths:
+                    - path: "/"
+              tls: []
+        
+        machine-learning:
+          enabled: true
+          image:
+            repository: ghcr.io/immich-app/immich-machine-learning
+            pullPolicy: IfNotPresent
+          env:
+            TRANSFORMERS_CACHE: /cache
+          persistence:
+            cache:
+              enabled: true
+              size: 10Gi
+              # Optional: Set this to pvc to avoid downloading the ML models every start.
+              type: emptyDir
+              accessMode: ReadWriteMany
+              # storageClass: your-class

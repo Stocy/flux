@@ -5,7 +5,7 @@ metadata:
     namespace: immich
 spec:
     hostnames:
-        - ENC[AES256_GCM,data:YBDTmoM4y25uFtlYwySkgbv1Fg==,iv:eGDeqC/oQHTEHSwJevofXL/SbVb78Gv+LgKN6jUhMNY=,tag:gJ+pF/q4Bbf+6J/JhT61jw==,type:str]
+        - photos.${SECRET_DOMAIN_0}
     parentRefs:
         - name: http-gateway
           sectionName: http
@@ -16,35 +16,3 @@ spec:
               requestRedirect:
                 scheme: https
                 statusCode: 301
-sops:
-    kms: []
-    gcp_kms: []
-    azure_kv: []
-    hc_vault: []
-    age: []
-    lastmodified: "2025-02-08T11:51:31Z"
-    mac: ENC[AES256_GCM,data:RUZBm4ZpUbhNMvFFFAOHewuzGOHH2wX6XDzw1/QW4FnDSlKPdOCt1E1d1Z5TfoCm8JCdO+OUx8+l1cYNFiPBx3/b4Ae911fxRDFLupSZI5/i7Bxl0McKnF345yKbmLOibN92oVyQz3IP8GlrsM3g9kG6t8bEytJbD49CWzZ/Iww=,iv:DUkPSaz3XZUA7QMMqaq+EzpIlLLSf0fHtgHmpZyPl+w=,tag:e+my1Q97VVehiG6K4+3dRQ==,type:str]
-    pgp:
-        - created_at: "2025-02-08T11:51:31Z"
-          enc: |-
-            -----BEGIN PGP MESSAGE-----
-
-            hQIMA262vqLG74HEAQ/+I4y/V8LvkDWQgpgvRP2bvwAWTFeNzeLzYhaBuC7X/O6q
-            NsdHMsGXDiFKwoKsJfAK6kl0EPs788dR00XDlwT3TZM8Y/jCqu95Jo11yazQWZe4
-            odYjPP4bUf4Nlsoq45oJHQlT0cVF4aDhMDaKJPiArvjC+ucR+SMXq43IdxVkzlSH
-            YmSLhz5sg5AmjR5kAQ3DmKR88hbQZoFz4bhrT+/+DZEmJhr+ydv0dm5hIfTWJPcr
-            PI7uJP9te0dwGrWsWAHPcuqe79EYu5msxNnc6Y5QiUJAuzmAQ6c3tatPdTAsHLEh
-            DSNo9tPUREl05sJfKz37OBjfGWh/EMTygjbCnD/S+mM8Jghjfqwf7BuJIM1GE5ix
-            GCRpxbw3iCTv/SgsUzy0JhXaF4uSB5Iumy0UcPTDU9s3nxFgfEutC5OI5qKTALsd
-            9audf7HKyF3AyGY1k9k0nhHab4/Xx/mdzEyABtAZZKfCUek4Qary2aXsJ2TnE17/
-            cxE8P8WDPGONhD8sMz4K3Ey4na5+MaAQdkaUyuDDsti0t1Qnbei5Gl2Gc+QFJ+A/
-            NbMKtGQMFvT8KyorzuIY6OJ6uMa5RRaNPD19B/VzTADzfB5ZevU4F83S0+4PNCBq
-            EhbbOFp2jVXMrABz34fxSfgrT0fXUHlnC1V9l8PjWAR/DI2PA7p4F+LauRzzZVzU
-            aAEJAhDqAmbvxsDInZWxSsDaoqqGvnKHKQPLVrlD/0kPVuCT73ZI//0AMhqCdcOY
-            kCaSI1ENWm03IL62vkPGWC3JV0FDVu2XSdlMNjGGa/GipIK7uGcKDJd8FsVbjNOl
-            xuqzpOJ3mQLP
-            =Rdc9
-            -----END PGP MESSAGE-----
-          fp: 75305C71C2CBD1BB31E45BC9EB711729A929833C
-    encrypted_regex: hostnames
-    version: 3.9.1
