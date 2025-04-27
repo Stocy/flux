@@ -1,0 +1,29 @@
+apiVersion: cert-manager.io/v1
+kind: ClusterIssuer
+metadata:
+    name: ${ISSUER_NAME_0}
+spec:
+    acme:
+        server: https://acme-v02.api.letsencrypt.org/directory
+        # server: https://acme-staging-v02.api.letsencrypt.org/directory
+        email: ${LE_ISSUER_ACCOUNT_EMAIL_0}
+        privateKeySecretRef:
+            name: letsencrypt-${LE_ISSUER_ACCOUNT_NAME_0}-issuer-account
+        solvers:
+            - dns01:
+                rfc2136:
+                    nameserver: ${RFC2136_SOLVER_IPPORT_0}
+                    tsigKeyName: ${RFC2136_SOLVER_TSIG_NAME_0}
+                    tsigAlgorithm: ${RFC2136_SOLVER_TSIG_ALG_0}
+                    tsigSecretSecretRef:
+                        name: ${RFC2136_SOLVER_NAME_0}-tsig
+                        key: tsigKey
+---
+apiVersion: v1
+kind: Secret
+metadata:
+    name: ${RFC2136_SOLVER_NAME_0}-tsig
+    namespace: cert-manager
+data:
+    tsigKey: ${RFC2136_SOLVER_TSIGKEY_0}
+type: Opaque

@@ -6,9 +6,11 @@ metadata:
 spec:
   interval: 15m
   path: ./cert-manager/crds
-#path: ./releases/download/v1.16.2/cert-manager.crds.yaml
-  prune: true # remove any elements later removed from the above path
+  prune: true 
   sourceRef:
     kind: GitRepository
-#    name: cert-manager-crds
     name: flux-system
+  postBuild:
+    substituteFrom:
+      - kind: ConfigMap
+        name: cluster-vars
