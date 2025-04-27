@@ -3,5 +3,6 @@ kind: ConfigMap
 metadata:
   creationTimestamp: null
   name: cluster-vars
+  namespace: flux-system
 data:
   CM_VERSION: v1.17.2
