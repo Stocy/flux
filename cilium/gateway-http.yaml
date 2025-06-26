@@ -9,8 +9,8 @@ spec:
     #    - type: IPAddress
     #      value: 1.2.3.4 #example
     addresses:
-        - type: ENC[AES256_GCM,data:u56eCjevlFoa,iv:uY4ZywpBQcBuxYxFbvyNVRFzACeVrwZPesmSd8ssMds=,tag:9ekfYNpDNB+tj/dD1VCp1w==,type:str]
-          value: ENC[AES256_GCM,data:/7wRoawlH76CFhcnYjg=,iv:B1ZUN1UV9iKbVxg1ye04aHbTWSDdcBShTcwLSgpDAJ4=,tag:frDN47rfw2WgOsOICsV/EA==,type:str]
+        - type: IPAddress
+          value: ${NODE0_IP}
     listeners:
         - allowedRoutes:
             namespaces:
@@ -33,39 +33,7 @@ spec:
           tls:
             mode: Terminate
             certificateRefs:
-                - kind: ENC[AES256_GCM,data:2f13joOQ,iv:z030JYm1mPd6m1Db+sl1BVTvbvwCAF9LBu8Xvja2LLs=,tag:XSOFyDj4Y/R8fOD3hFyiRw==,type:str]
+                - kind: Secret
                   group: ""
-                  name: ENC[AES256_GCM,data:3ftXxuuD2aEj4VA14VVdZWe8dE27,iv:wfwIBBtnHSvd2F9GpuydNyb0N/GPCiW2e3b0VM3was4=,tag:OaXfU60Urqe/efp2mEvxIQ==,type:str]
-                  namespace: ENC[AES256_GCM,data:bRnfcCrPxfMUzeYp,iv:z47vZKOHskJO2KIDCJcdglP3OhiOLFa2ajtpDKSvSMQ=,tag:kEEI9R2J8xpW4KkIbgN2pA==,type:str]
-sops:
-    kms: []
-    gcp_kms: []
-    azure_kv: []
-    hc_vault: []
-    age: []
-    lastmodified: "2025-02-06T19:36:55Z"
-    mac: ENC[AES256_GCM,data:mBEjFHXjoUZPnPjHQeF/Kfkegl9s3zzwpy0mHqFGpE8cVGs20Grhmt1q87EzQMHy3addMFPscTUN7T8AG2rayxuBEY8g3A2ck+sEkf1qRRBHqKeYL8hD0ZXKhyssYmnDvFEYUocvH0IdI+/Pvq1UHbuhkcbOuCLXrdnGUO8XNtw=,iv:ZwucsyCXihi6DIhqKK3TpRbvgJifChVh6wRrwWUxqcw=,tag:eULvYGkvuyW6gvAF84KwVA==,type:str]
-    pgp:
-        - created_at: "2025-02-01T22:13:35Z"
-          enc: |-
-            -----BEGIN PGP MESSAGE-----
-
-            hQIMA262vqLG74HEAQ//adcPkBvrPhYJD2F94z42JNNlPRArl8DDRoToX/dnaN1h
-            GPx5y90WSxVyuxNuDDLBulUQ+m2y4gibUx/X+9QmBxjsDlrtLVcgMlRQiZzjREea
-            2B0V5TGhwjoRMv54woXDIWOftl5ABrEMxrHuxel1433E5YazXu2SVjWJeQsbwcXX
-            H2mB+zaVYr0+qaOjHRf+HWxLldxOPbYwrS7CSNe9q4hGMslWlxE/lyqtyTIXqAeL
-            JYYSfW7yjCwW5Qb1fgGY0if4XJhsUCE7DIye0UAuHdTvohtvEdQEnuustnIopDxZ
-            YuUZFNqXWtMvLxkA8LMyBAdBJXzi6aywyBDeAQEw9LnLOUxVxc+GbP4P/ruciFaA
-            yVESAgRZ5wh5d2BLsBCcnHKIcDFRCxiUV+zoJenmORCwZyiB3TTRKR6fuSZBW5NI
-            XOijsKvJIIZ2rEFImg3cBhEXv6dmX4femiZuUvRZqt4ssZBV/FldLgnA10UvCwu5
-            SY3f3+xWmBJc7IxxWxYCS9YH/oqw6+qD3IycwhkPD5ay4AtHD55mSwDoC/ydem1F
-            ENIhRfWEI9OXABgZunOsGnp6IeiGpjyIkY73jmJYFQqBRw4h4zWsaV/AsIojKJNg
-            nWKertonS6hDMDYGnsH+ya/5iSYB5qBaociIaiyVxWfH9YgtNgRpwd7rNa7Y7LHU
-            aAEJAhBsC+rliUt4RqKZfLD9ReeMGTjuQdB5y/cRdHO6zq068IHKsjK03PIsy2yF
-            sclBMySSMQ5XVaL3o55W4LT/XuGQe1Je6ZZ+pgBqdhVFDYD4SuyeQjBXsW7RYE+x
-            K4CQFatdcbGe
-            =OC62
-            -----END PGP MESSAGE-----
-          fp: 75305C71C2CBD1BB31E45BC9EB711729A929833C
-    encrypted_regex: ^(certificateRefs|addresses)$
-    version: 3.9.1
+                  name: wildcard-${SECRET_DOMAIN_0}-tls
+                  namespace: cert-manager
