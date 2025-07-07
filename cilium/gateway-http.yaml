@@ -12,7 +12,7 @@ spec:
         - type: IPAddress
           value: ${NODE0_IP}
         - type: IPAddress
-          value: "${NODE0_IPV6}"
+          value: ${NODE0_IPV6}
     listeners:
         - allowedRoutes:
             namespaces:
