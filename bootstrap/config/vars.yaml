@@ -5,4 +5,5 @@ metadata:
   name: cluster-vars
   namespace: flux-system
 data:
+  quote: '"'
   CM_VERSION: v1.17.2
