@@ -5,13 +5,12 @@ metadata:
   namespace: immich
 spec:
   # At the time of writing, immich is only compatible with pgvecto.rs <0.4. Latest postgres image with that version is 16.5.
-  imageName: ghcr.io/immich-app/postgres:16-vectorchord0.4.3-pgvectors0.3.0 
+  imageName: ghcr.io/immich-app/postgres:16-vectorchord0.4.3
   instances: 1
 
   postgresql:
     shared_preload_libraries:
       - "vchord.so"
-      - "vectors.so"
 
   managed:
     roles:
