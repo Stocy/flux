@@ -20,6 +20,15 @@ spec:
                 selector:
                     matchLabels:
                         dns-gateway-access: "true"
-          name: dns
+          name: dns-tcp
           port: 53
-          #protocol: HTTP
+          protocol: TCP
+        - allowedRoutes:
+            namespaces:
+                from: Selector
+                selector:
+                    matchLabels:
+                        dns-gateway-access: "true"
+          name: dns-udp
+          port: 53
+          protocol: UDP
