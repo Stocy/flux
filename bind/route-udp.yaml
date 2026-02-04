@@ -1,0 +1,12 @@
+apiVersion: gateway.networking.k8s.io/v1alpha2
+kind: UDPRoute
+metadata:
+  name: udp-dns-route
+spec:
+  parentRefs:
+  - name: dns-gateway
+    sectionName: dns-udp
+  rules:
+  - backendRefs:
+    - name: dns-service
+      port: 53

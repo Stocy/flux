@@ -1,0 +1,12 @@
+apiVersion: gateway.networking.k8s.io/v1alpha2
+kind: TCPRoute
+metadata:
+  name: tcp-dns-route
+spec:
+  parentRefs:
+  - name: dns-gateway
+    sectionName: dns-tcp
+  rules:
+  - backendRefs:
+    - name: dns-service
+      port: 53
