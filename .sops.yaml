@@ -20,31 +20,6 @@ creation_rules:
    encrypted_regex: values
    pgp: 75305C71C2CBD1BB31E45BC9EB711729A929833C
 
- - path_regex: immich/pv-.*.yaml
-   encrypted_regex: ^(path|matchExpressions|capacity)$
-   pgp: 75305C71C2CBD1BB31E45BC9EB711729A929833C
- - path_regex: immich/pvc-.*.yaml
-   encrypted_regex: ^(requests)$
-   pgp: 75305C71C2CBD1BB31E45BC9EB711729A929833C
- - path_regex: immich/helmrelease.yaml 
-   encrypted_regex: values
-   pgp: 75305C71C2CBD1BB31E45BC9EB711729A929833C
- - path_regex: immich/configmap-immich-helm-values.yaml 
-   encrypted_regex: values.yaml
-   pgp: 75305c71c2cbd1bb31e45bc9eb711729a929833c
- - path_regex: immich/cnpg-cluster.yaml 
-   encrypted_regex: storage
-   pgp: 75305c71c2cbd1bb31e45bc9eb711729a929833c
- - path_regex: immich/secret-immich-postgres-user.yaml 
-   encrypted_regex: stringData
-   pgp: 75305c71c2cbd1bb31e45bc9eb711729a929833c
- - path_regex: immich/https-route.yaml
-   encrypted_regex: hostnames
-   pgp: 75305C71C2CBD1BB31E45BC9EB711729A929833C
- - path_regex: immich/http-filter-redirect.yaml
-   encrypted_regex: hostnames
-   pgp: 75305C71C2CBD1BB31E45BC9EB711729A929833C
-
  - path_regex: cnpg/configmap-helm-values.yaml 
    encrypted_regex: values.yaml
    pgp: 75305c71c2cbd1bb31e45bc9eb711729a929833c
