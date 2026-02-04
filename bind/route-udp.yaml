@@ -2,6 +2,7 @@ apiVersion: gateway.networking.k8s.io/v1alpha2
 kind: UDPRoute
 metadata:
   name: udp-dns-route
+  namespace: bind
 spec:
   parentRefs:
   - name: dns-gateway
