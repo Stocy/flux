@@ -4,10 +4,10 @@ metadata:
   name: immich
   namespace: flux-system
 spec:
-  interval: 15m
+  interval: 2m
   path: immich
   prune: true # remove any elements later removed from the above path
-  timeout: 2m # if not set, this defaults to interval duration, which is 1h
+  # timeout: 2m # if not set, this defaults to interval duration, which is 1h
   sourceRef:
     kind: GitRepository
     name: flux-system
