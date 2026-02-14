@@ -21,7 +21,7 @@ spec:
 #        name: cluster-vars
       - kind: Secret
         name: cluster-secret-vars
-  validation: server
+#  validation: server
   healthChecks:
     - apiVersion: apps/v1
       kind: Deployment
