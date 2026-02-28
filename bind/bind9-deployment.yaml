@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: bind9-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: bind9
+  template:
+    metadata:
+      labels:
+        app: bind9
+    spec:
+      containers:
+      - name: bind9
+        image: ubuntu/bind9:9.20-24.10_beta 
+        # internetsystemsconsortium/bind9:9.19 #pas en arm64 :/
+        # env:
+        ports:
+        - containerPort: 53
+          protocol: TCP
+        - containerPort: 53
+          protocol: UDP
