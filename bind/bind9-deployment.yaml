@@ -15,8 +15,6 @@ spec:
       containers:
       - name: bind9
         image: ubuntu/bind9:9.20-24.10_beta 
-        # internetsystemsconsortium/bind9:9.19 #pas en arm64 :/
-        # env:
         ports:
         - containerPort: 53
           protocol: TCP
