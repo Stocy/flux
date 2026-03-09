@@ -13,11 +13,19 @@ spec:
       labels:
         app: bind9
     spec:
+      volumes:
+        - name: bind-config
+          persistentVolumeClaim: 
+            claimName: bind-data-pvc
       containers:
       - name: bind9
+        volumeMounts:
+          - mountPath: "/etc/bind"
+            name: bind-config
         image: ubuntu/bind9:9.20-24.10_beta 
         ports:
         - containerPort: 53
           protocol: TCP
         - containerPort: 53
           protocol: UDP
+

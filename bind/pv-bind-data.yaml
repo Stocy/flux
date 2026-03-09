@@ -11,7 +11,7 @@ spec:
     persistentVolumeReclaimPolicy: Retain
     storageClassName: local-path
     local:
-        path: ${BIND_DATA_PATH}/immich
+        path: ${BIND_DATA_PATH}/bind
     nodeAffinity:
         required:
             nodeSelectorTerms:
