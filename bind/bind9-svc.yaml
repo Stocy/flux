@@ -4,6 +4,7 @@ metadata:
   name: dns-service
   labels:
     app: dns-service
+  namespace: bind
 spec:
   selector:
     app: dns-service
