@@ -13,6 +13,7 @@ spec:
       labels:
         app: dns-service
     spec:
+      hostNetwork: true
       volumes:
         - name: bind-config
           persistentVolumeClaim: 
@@ -23,9 +24,9 @@ spec:
           - mountPath: "/etc/bind"
             name: bind-config
         image: ubuntu/bind9:9.20-24.10_beta 
-        ports:
-        - containerPort: 53
-          protocol: TCP
-        - containerPort: 53
-          protocol: UDP
+#        ports:
+#        - containerPort: 53
+#          protocol: TCP
+#        - containerPort: 53
+#          protocol: UDP
 
