@@ -1,1 +1,24 @@
-bootstrap/kustomizations/kustomization-certmanager-resources.yaml
+apiVersion: kustomize.toolkit.fluxcd.io/v1
+kind: Kustomization
+metadata:
+  name: cert-manager-resources
+  namespace: flux-system
+spec:
+  dependsOn:
+    - name: cert-manager-helm
+  wait: true
+  interval: 15m
+  path: ./cert-manager/resources
+  prune: true # remove any elements later removed from the above path
+  sourceRef:
+    kind: GitRepository
+    name: flux-system
+  postBuild:
+    substituteFrom:
+      - kind: Secret
+        name: cluster-secret-vars
+  healthChecks:
+    - apiVersion: apps/v1
+      kind: Deployment
+      name: cert-manager
+      namespace: cert-manager

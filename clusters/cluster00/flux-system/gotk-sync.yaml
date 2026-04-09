@@ -12,6 +12,11 @@ spec:
   secretRef:
     name: flux-system
   url: ssh://git@github.com/Stocy/flux
+  include:
+    - repository:
+        name: flux-system
+      fromPath: bootstrap/config
+      toPath: clusters/cluster00/config
 ---
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization

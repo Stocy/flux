@@ -1,1 +1,4 @@
-bootstrap/namespaces/namespace-certmanager.yaml
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: cert-manager
