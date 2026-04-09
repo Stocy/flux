@@ -26,8 +26,8 @@ data:
 
         redis:
           image:
-            repository: bitnamilegacy/redis
-            tag: 7.4.1-debian-12-r0
+            repository: redis 
+            tag: 8.2.5-bookworm
             enabled: true
         # clusterRole:
         #     enabled: true
