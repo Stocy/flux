@@ -1,0 +1,31 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+    creationTimestamp: null
+    name: authentik-helm-values
+    namespace: authentik
+data:
+    values.yaml: |-
+        authentik:
+          secret_key: ${AUTHENTIK_SECRET_KEY} 
+          error_reporting:
+            enabled: false
+          postgresql:
+            password: ${AUTHENTIK_PG_PASSWORD}
+        
+        server:
+          replicas: 1
+        
+        postgresql:
+          enabled: true
+          auth:
+            password: ${AUTHENTIK_PG_PASSWORD} 
+        
+        redis:
+            enabled: true
+        # clusterRole:
+        #     enabled: true
+        global:
+          postgresql:
+            auth:
+              password: ${AUTHENTIK_PG_PASSWORD}
