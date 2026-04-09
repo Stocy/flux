@@ -1,0 +1,39 @@
+apiVersion: gateway.networking.k8s.io/v1
+kind: Gateway
+metadata:
+    name: http-gateway
+    namespace: kube-system
+spec:
+    gatewayClassName: cilium
+    #  addresses:
+    #    - type: IPAddress
+    #      value: 1.2.3.4 #example
+    addresses:
+        - type: IPAddress
+          value: ${NODE1_IP}
+    listeners:
+        - allowedRoutes:
+            namespaces:
+                from: Selector
+                selector:
+                    matchLabels:
+                        http-gateway-access: "true"
+          name: http
+          port: 80
+          protocol: HTTP
+        - allowedRoutes:
+            namespaces:
+                from: Selector
+                selector:
+                    matchLabels:
+                        http-gateway-access: "true"
+          name: https
+          port: 443
+          protocol: HTTPS
+          tls:
+            mode: Terminate
+            certificateRefs:
+                - kind: Secret
+                  group: ""
+                  name: wildcard-${SECRET_DOMAIN_0}-tls
+                  namespace: cert-manager
