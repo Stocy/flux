@@ -25,7 +25,7 @@ data:
             password: ${AUTHENTIK_PG_PASSWORD} 
 
         redis:
-          image:
+        #  image:
             #repository: redis 
             #tag: 8.2.5-bookworm
             enabled: true
