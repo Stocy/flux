@@ -28,7 +28,7 @@ data:
           image:
             repository: redis 
             tag: 8.2.5-bookworm
-            enabled: true
+            enabled: false
         # clusterRole:
         #     enabled: true
 
