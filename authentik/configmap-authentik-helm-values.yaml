@@ -15,7 +15,7 @@ data:
         
         server:
           replicas: 1
-        
+
         postgresql:
           image:
              repository: bitnamilegacy/postgresql
@@ -23,7 +23,7 @@ data:
           enabled: true
           auth:
             password: ${AUTHENTIK_PG_PASSWORD} 
-        
+
         redis:
           image:
             repository: bitnamilegacy/redis
@@ -31,6 +31,7 @@ data:
             enabled: true
         # clusterRole:
         #     enabled: true
+
         global:
           postgresql:
             auth:
