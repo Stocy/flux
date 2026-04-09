@@ -25,6 +25,9 @@ data:
             password: ${AUTHENTIK_PG_PASSWORD} 
         
         redis:
+          image:
+            repository: bitnamilegacy/redis
+            tag: 7.4.1-debian-12-r0
             enabled: true
         # clusterRole:
         #     enabled: true
