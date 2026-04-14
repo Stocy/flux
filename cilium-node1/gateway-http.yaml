@@ -4,7 +4,7 @@ metadata:
     name: http-gateway
     namespace: kube-system
 spec:
-    gatewayClassName: cilium
+    gatewayClassName: eg
     #  addresses:
     #    - type: IPAddress
     #      value: 1.2.3.4 #example
