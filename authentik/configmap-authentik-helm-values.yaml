@@ -17,17 +17,17 @@ data:
           replicas: 1
 
         postgresql:
-#          image:
-#            repository: bitnamilegacy/postgresql
-#            tag: 15.8.0-debian-12-r18
+          #image:
+          #  repository: bitnamilegacy/postgresql
+          #  tag: 15.8.0-debian-12-r18
           enabled: true
           auth:
             password: ${AUTHENTIK_PG_PASSWORD} 
 
         redis:
-#          image:
-#            repository: redis 
-#            tag: 8.2.5-bookworm
+          #image:
+          #  repository: redis 
+          #  tag: 8.2.5-bookworm
           enabled: true
         # clusterRole:
         #     enabled: true
