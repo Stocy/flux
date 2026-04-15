@@ -33,6 +33,8 @@ data:
         #     enabled: true
 
         global:
+          security
+            allowInsecureImages: true
           postgresql:
             auth:
               password: ${AUTHENTIK_PG_PASSWORD}
