@@ -33,7 +33,7 @@ data:
         #     enabled: true
 
         global:
-          security
+          security:
             allowInsecureImages: true
           postgresql:
             auth:
