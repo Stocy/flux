@@ -12,6 +12,7 @@ data:
             enabled: false
           postgresql:
             password: ${AUTHENTIK_PG_PASSWORD}
+            host: authentik-postgres-rw 
         
         server:
           replicas: 1
