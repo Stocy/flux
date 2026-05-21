@@ -1,0 +1,28 @@
+# Please edit the object below. Lines beginning with a '#' will be ignored,
+# and an empty file will abort the edit. If an error occurs while saving this file will be
+# reopened with the relevant failures.
+#
+apiVersion: helm.toolkit.fluxcd.io/v2
+kind: HelmRelease
+metadata:
+    name: paperless
+    namespace: paperless
+spec:
+    chart:
+        spec:
+            chart: paperless
+            reconcileStrategy: ChartVersion
+            sourceRef:
+                kind: HelmRepository
+                name: pascaliske
+                namespace: flux-system
+            version: 2.4.3
+    interval: 15m
+    releaseName: paperless
+    timeout: 5m
+    valuesFrom:
+       - kind: ConfigMap
+         name: paperless-helm-values 
+         valuesKey: values.yaml # This is the default, but best to be explicit for clarity
+    
+
