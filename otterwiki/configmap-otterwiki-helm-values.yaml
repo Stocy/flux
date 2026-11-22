@@ -30,7 +30,8 @@ data:
         ## env sets environment variables to pass to the container. Can be set as name/value pairs,
         ## read from secrets or configmaps. For the otterwiki configuration stick to the config dict
         ## these will we stored in a configMap and the secrets in a Secret.
-        env: {}
+        env:
+            DISABLE_REGISTRATION: True 
         
         securityContext: {}
           # capabilities:
