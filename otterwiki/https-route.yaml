@@ -1,0 +1,16 @@
+apiVersion: gateway.networking.k8s.io/v1
+kind: HTTPRoute
+metadata:
+    name: https-route
+    namespace: otterwiki
+spec:
+    hostnames:
+        - wiki.${SECRET_DOMAIN_0}
+    parentRefs:
+        - name: http-gateway
+          sectionName: https
+          namespace: kube-system
+    rules:
+        - backendRefs:
+            - name: otterwiki
+              port: 80
